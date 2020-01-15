@@ -1,0 +1,13 @@
+<table class="table">
+  <thead class="thead-light">
+  <tr class="bg-primary">
+    <th scope="col">Name</th><th scope="col">Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let p of products._embedded.products" class="bg-success">
+      <td scope="row">{{p.name}}</td>
+      <td>{{p.price|number:'0.4'}}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Gestion des utilisateurs</div>
+  <div class="panel-body">
+    <table class="table" *ngIf="users">
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let u of users._embedded.appUsers">
+        <td>{{u.username}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
